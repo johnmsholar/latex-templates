@@ -1,0 +1,88 @@
+\documentclass[10pt,letter]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage[headsep=.5cm,headheight=.5cm, letterpaper, portrait, margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usepackage{parskip}
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage{dsfont}
+\usepackage{hyperref}
+\usetikzlibrary{arrows}
+\SetAlgoLined
+\DontPrintSemicolon
+
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=lines,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ %
+ rulecolor=\color{gray},
+ labelposition=topline,
+ %
+}
+
+\newcommand{\ind}[1]{\mathds{1}\left\{#1\right\}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Var}{\mathrm{Var}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\newcommand{\reals}[0]{\mathbb{R}}
+\newcommand{\inreals}[0]{\in \mathbb{R}}
+\newcommand{\inrealsexp}[1]{\in \mathbb{R}^{#1}}
+\newcommand{\incomplete}[0]{\text{\textcolor{red}{INCOMPLETE}}}
+
+
+% Templates
+
+% Lettered Enumeration
+% ---
+% \begin{enumerate}[label=(\alph*)]
+%   \item Problem 1a
+%   \item Problem 1b
+% \end{enumerate}
+
+% Aligned Equation
+% ---
+% \begin{equation*}\begin{split}
+%   Ax &= b
+% \end{split}\end{equation*}
+
+% Including Figures
+% ---
+% \includegraphics[width=\textwidth]{Filename}
+
+% Including Code
+% ---
+% \VerbatimInput[label=\fbox{\color{black}Filename}]{Filename}
+
+\onehalfspacing
+\pagestyle{fancy}
+\lhead{John Merriman Sholar}
+\chead{[Assignment Name]}
+\rhead{Due [Assignment Due Date]}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+
+\title{[Assignment Name]}
+\author{John Merriman Sholar}
+\date{[Assignment Due Date]}
+\maketitle
+\thispagestyle{empty}
+
+\lipsum
+
+\end{document}
